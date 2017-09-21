@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your App</title>
+    <link rel="stylesheet" href="css/normalize.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/blog.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"
+    integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+    crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <header role="banner">
+      <div class="banner">
+        <div class="profile">
+          <h1 class="title">The<b>WalkingDead</b>App&trade;</h1>
+            <div class="notifications">
+              <div id="dropDownMenu">
+                <svg class="bell" version="1.1" id="bell-notification" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                   viewBox="0 0 32 32" style="enable-background:new 0 0 32 32;" xml:space="preserve">
+                  <style type="text/css">
+                   .st0{fill:#cca300;}
+                  </style>
+                  <g id="_x36__6_">
+                     <g>
+                        <path class="st0" d="M24,18v-8c0-5.5-4.5-10-10-10S4,4.5,4,10v8l-4,8h9.1c0.5,2.3,2.5,4,4.9,4s4.4-1.7,4.9-4H28L24,18z M14,28
+          c-1.3,0-2.4-0.8-2.8-2h5.6C16.4,27.2,15.3,28,14,28z M3,24l3-6v-8c0-4.4,3.6-8,8-8s8,3.6,8,8v8l3,6H3z"/>
+                     </g>
+                  </g>
+                </svg>
+                <ul class="hiddenAlert">
+                  <li id="hidden">You have 9 new followers.</li>
+                  <li id="hidden">You have 3 friend requests.</li>
+                  <li id="hidden">You have 1 new message.</li>
+                </ul>
+              </div>
+            </div>
+          <img class="profile-pic" src="img/robertweber.jpg" alt="picture of user">
+          <h2 class="user-name">Robert Weber</h2>
+        </div>
+      </div>
+    </header>
+    <div class="dash">
+      <div class="dash-text">
+        <h2 class="dashboard">Message Board</h2>
+      </div>
+      <div class="dash-form">
+        <form class="dash-search">
+          <input id="search-box" name="search-box" type="text" list="datalist1" placeholder=" Search">
+          <datalist id="datalist1">
+            <option value="Rick Grimes"></option>
+            <option value="Carl Grimes"></option>
+            <option value="Michonne"></option>
+            <option value="Carol"></option>
+            <option value="Daryl"></option>
+            <option value="Maggie"></option>
+            <option value="Glen"></option>
+            <option value="Neegan"></option>
+          </datalist>
+          <img class="mag-glass" src="img/magnifying-glass-icon.png" alt="magnifying glass">
+        </form>
+      </div>
+    </div>
+    <nav role="navigation" class="main-nav">
+      <ul class="nav-icons">
+        <li class="icons"><img class="thumb" src="icons/icon-dashboard.svg" alt="dashboard link"></li>
+        <li class="icons"><img class="thumb" src="icons/icon-members.svg" alt="members link"></li>
+        <li class="icons"><img class="thumb" src="icons/icon-visits.svg" alt="visits link"></li>
+        <li class="icons"><img class="thumb" src="icons/icon-settings.svg" alt="settings link"></li>
+      </ul>
+    </nav>
+    <main role="main" class="wrapper">
+      <div class="members">
+        <div class="recent-activity">
+          <span class="member-header">Recent Activity</span>
+          <div class="cast-members">
+            <div class="image-cont">
+            <img class="cast" src="img/Glen.jpg" alt="picture of Glen">
+            </div>
+            <div class="info-2">
+              <span class="member-comment">- Glen posted a new message "I'm Alive"</span>
+              <span class="im-alive">
+                Guys, I'm still alive! You just left me out there in the woods with a massive headache and for some reason I can't find my eye.
+              </span>
+              <span class="post-date">3 days ago</span>
+              <a href="" class="mobile-view">View post</a>
+            </div> <!--info class-->
+          </div> <!--cast-members class-->
+          <div class="cast-members">
+            <div class="image-cont">
+            <img class="cast" src="img/neegan.jpg" alt="picture of Neegan">
+            </div>
+            <div class="info-2">
+              <span class="member-comment">- Neegan replied to "I'm Alive"</span>
+              <span class="im-alive">
+                Glen, seriously, I smashed your head in. Lucille never leaves a job unfinished!
+              </span>
+              <span class="post-date">2 days ago</span>
+              <a href="" class="mobile-view">View comment</a>
+            </div> <!--info class-->
+          </div> <!--cast-members class-->
+          <div class="cast-members">
+            <div class="image-cont">
+            <img class="cast" src="img/Glen.jpg" alt="picture of Glen">
+            </div>
+            <div class="info-2">
+              <span class="member-comment">- Glen replied to "I'm Alive"</span>
+              <span class="im-alive">
+                Everyone knows you swing like a girl! I'm like a cat, I have nine lives! Rick, help me out and tell Negan the truth.
+              </span>
+              <span class="post-date">2 days ago</span>
+              <a href="" class="mobile-view">View comment</a>
+            </div> <!--info class-->
+          </div> <!--cast-members class-->
+          <div class="cast-members">
+            <div class="image-cont">
+            <img class="cast" src="img/Glen.jpg" alt="picture of Glen">
+            </div>
+            <div class="info-2">
+              <span class="member-comment">- Glen replied to "I'm Alive"</span>
+              <span class="im-alive">
+                Pssst.... I'm hiding under the dumpster at Hill Top.
+              </span>
+              <span class="post-date">1 day ago</span>
+              <a href="" class="mobile-view">View comment</a>
+            </div> <!--info class-->
+          </div> <!--cast-members class-->
+          <div class="cast-members">
+            <div class="image-cont">
+            <img class="cast" src="img/RickGrimes.jpg" alt="picture of Rick">
+            </div>
+            <div class="info-2">
+              <span class="member-comment">- Rick replied to "I'm Alive"</span>
+              <span class="im-alive">
+                Glen, sorry.... Your dead! Caaaarrrrrl...
+              </span>
+              <span class="post-date">1 day ago</span>
+              <a href="" class="mobile-view">View comment</a>
+            </div> <!---- info class ----->
+          </div> <!--cast-members class-->
+          <div class="cast-members">
+            <div class="image-cont">
+            <img class="cast" src="img/Carl.jpg" alt="picture of Carl">
+            </div>
+            <div class="info-2">
+              <span class="member-comment">- Carl replied to "I'm Alive"</span>
+              <span class="im-alive">
+                Dad, seriously, it's getting old!
+              </span>
+              <span class="post-date">22 hours ago</span>
+              <a href="" class="mobile-view">View comment</a>
+            </div> <!--info class-->
+          </div> <!--cast-members class-->
+        </div> <!--recent-activity class-->
+      </div> <!--members class-->
+    </main> <!--wrapper class-->
+    <footer role="contentinfo">
+      <h1 class="footer-home">Return <a href="index.html">Home</a></h1>
+    </footer>
+  </body>
+</html>
