@@ -1,3 +1,14 @@
+/*----- Notification ul -----*/
+
+
+$('#dropDownMenu').click(
+  function() {
+    $('.hiddenAlert').toggle();
+    $('#circle').hide();
+  }
+);
+
+
 
 
 /*----- Alert -----*/
@@ -271,34 +282,19 @@ let mobilePie = new Chart (PIE, {
 /*----- Form errors and Submits -----*/
 
 
-
 const Form = document.getElementById('message-button');
-const messageButton = document.getElementById('message-button');
+const userCast = document.getElementById('user-search');
 const Error = document.getElementById(error);
 const area = document.getElementById('message-user');
-const Error2 = document.getElementById(error2);
 
 Form.addEventListener('click', () => {
-  if ((messageButton.click) && (document.userform.username.value == '')) {
-    document.getElementById('error').innerHTML = "*Please choose a cast member";
-    document.getElementById('user-search').style.borderColor = 'red';
+  if ((Form.click) && (document.userform.username.value == '')) {
+    document.getElementById('error').innerHTML = "Make sure all fields are filled out!";
     return false;
+  } if ((Form.click) && (document.userform.message.value == '')) {
+    document.getElementById('error').innerHTML = "Make sure all fields are filled out!";  
   } else {
-    error.style.display = 'none';
-    document.getElementById('user-search').style.borderColor = '';
-    return true;
-  }                               
-});
-
-Form.addEventListener('click', () => {
-  if ((messageButton.click) && (document.userform.message.value == '')) {
-    document.getElementById('error2').innerHTML = "*Please add a message";
-    document.getElementById('message-user').style.borderColor = 'red';
-    return false;
-  } else {
-    error2.style.display = 'none';
-    document.getElementById('message-user').style.borderColor = '';
-    return true;
+    document.getElementById('error').innerHTML = "Congrats, your message was sent!";
   }                      
 });
 
