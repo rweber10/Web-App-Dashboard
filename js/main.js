@@ -298,3 +298,37 @@ Form.addEventListener('click', () => {
   }                      
 });
 
+
+
+/*----- Local Storage -----*/
+
+function save() {
+  if (typeof(Storage) !== "undefined") {
+    //localStorage/sessionStorage
+    console.log('Yes! Local Storage Available')
+    const emailNotifications = document.getElementById("email");
+    localStorage.setItem("email", emailNotifications.checked);
+    const profileToPublic = document.getElementById("public");
+    localStorage.setItem("public", profileToPublic.checked);
+    const timezoneValue = document.getElementById("time-zone").value;
+    localStorage.setItem("timezoneValue", timezoneValue);
+  } else {
+      console.log('Sorry! No Web Storage support.')
+    }
+}     
+
+//Load local storage
+if (localStorage.length > 1) {
+  const emailPreference = JSON.parse(localStorage.getItem("email"));
+  document.getElementById("email").checked = emailPreference;
+  const profilePreference = JSON.parse(localStorage.getItem("public"));
+  document.getElementById("public").checked = profilePreference;
+  const myTimezone = localStorage.getItem("timezoneValue");
+  document.getElementById("time-zone").value = myTimezone;
+}
+
+//clear local storage
+function cancel() {
+  localStorage.clear();
+  location.reload();
+}
