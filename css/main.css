@@ -89,11 +89,6 @@ a:hover {
   }
 }
 
-#dropDownMenu:hover .hiddenAlert {
-  display: block;
-  opacity: .8;
-}
-
 #dropDownMenu:hover .st0 {
   fill: #cf0e45;
 }
